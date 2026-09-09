@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizytówka</title>
     <link rel="stylesheet" href="style.css">
 </head>
-</head>
 <body>
-    
+    <header>
+        <h1>Artem</h1>
+        <p>Klasa: 5P1T</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>O mnie</h2>
+            <img src="pobrane.jpg" alt="Zdjęcie profilowe">
+        </section>
+
+        <section>
+            <h2>Umiejętności</h2>
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Git i GitHub</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Kontakt</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="nameInput">Imię:</label>
+                    <input type="text" id="nameInput">
+                    <span id="nameError" style="color: red;"></span>
+                </div>
+                <div>
+                    <label for="emailInput">E-mail:</label>
+                    <input type="email" id="emailInput">
+                    <span id="emailError" style="color: red;"></span>
+                </div>
+                <div>
+                    <label for="subjectSelect">Temat:</label>
+                    <select id="subjectSelect">
+                        <option value="wspolpraca">Współpraca</option>
+                        <option value="pytanie">Pytanie ogólne</option>
+                        <option value="oferta">Oferta pracy</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="messageTextarea">Wiadomość:</label>
+                    <textarea id="messageTextarea" rows="5"></textarea>
+                    <span id="messageError" style="color: red;"></span>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+            <div id="thankYouMessage" style="display: none;">
+                <h3>Dziękujemy za wysłanie formularza!</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jan Kowalski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
