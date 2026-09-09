@@ -1,3 +1,9 @@
+/* Kolor przewodni: #5B3FD6
+   0x5B = 5 * 16 + 11 = 91
+   0x3F = 3 * 16 + 15 = 63
+   0xD6 = 13 * 16 + 6 = 214
+   czyli rgb(91, 63, 214) */
+
 * {
     box-sizing: border-box;
     margin: 0;
