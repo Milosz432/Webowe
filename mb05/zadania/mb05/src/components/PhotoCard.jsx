@@ -1,4 +1,4 @@
-const NAZWA_KATEGORII = {gory: 'Góry', morze: 'Moerze', miasto: 'Miasto'}
+const NAZWA_KATEGORII = {gory: 'Góry', morze: 'Morze', miasto: 'Miasto'}
 const KOLOR_KATEGORII = {gory: 'success', morze: 'primary', miasto: 'dark'}
 
 function PhotoCard({title, description, category, image, alt}){
